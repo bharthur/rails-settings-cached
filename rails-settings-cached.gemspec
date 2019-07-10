@@ -21,9 +21,8 @@ Gem::Specification.new do |s|
   Keep track of any global setting that you dont want to hard code into your rails app.
   You can store any kind of object.  Strings, numbers, arrays, or any object.
   """
-
-  s.add_dependency 'rails', '>= 4.2.0'
-
+  s.add_development_dependency 'sinatra-activerecord'
+  
   s.add_development_dependency 'sqlite3', '~> 1.3.6'
   s.add_development_dependency 'rubocop', '0.46.0'
   s.add_development_dependency 'simplecov'

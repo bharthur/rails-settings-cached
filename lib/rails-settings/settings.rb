@@ -105,7 +105,8 @@ module RailsSettings
       end
 
       def rails_initialized?
-        Rails.application && Rails.application.initialized?
+        # Rails.application && Rails.application.initialized?
+        true
       end
 
       private
