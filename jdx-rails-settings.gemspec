@@ -2,12 +2,12 @@ $:.push File.expand_path("../lib", __FILE__)
 require "rails-settings/version"
 
 Gem::Specification.new do |s|
-  s.name          = 'rails-settings-cached'
+  s.name          = 'jdx-rails-settings'
   s.version       = RailsSettings.version
-  s.authors       = ['Jason Lee', 'Squeegy', 'Georg Ledermann', '100hz']
-  s.email         = 'huacnlee@gmail.com'
+  s.authors       = ['Jason Lee', 'Squeegy', 'Georg Ledermann', '100hz', 'JobAdx']
+  s.email         = 'admin@jobadx.com'
   s.files         = Dir.glob('lib/**/*') + %w(README.md)
-  s.homepage      = 'https://github.com/huacnlee/rails-settings-cached'
+  s.homepage      = 'https://github.com/bharthur/rails-settings-cached'
   s.require_paths = ['lib']
 
   s.required_ruby_version = '>= 2.3'
