@@ -14,7 +14,7 @@ module RailsSettings
       end
 
       def source_path
-        @source || Rails.root.join("config/app.yml")
+        @source || "config/app.yml"
       end
 
       def [](key)
@@ -33,7 +33,7 @@ module RailsSettings
     def initialize
       content = open(self.class.source_path).read
       hash = content.empty? ? {} : YAML.load(ERB.new(content).result).to_hash
-      hash = hash[Rails.env] || {}
+      hash = hash[Sinatra::Application.environment.to_s] || {}
       replace hash
     end
   end
